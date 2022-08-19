@@ -18,7 +18,7 @@ function getComputerChoice () {
 //plays a single round of Rock Paper Scissors
 function playRound(playerSelection, computerSelection) {
   let player = playerSelection.toLowerCase();
-  let computer = 
 }
 
+console.log("Hello World");
 console.log(getComputerChoice());
