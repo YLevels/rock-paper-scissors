@@ -23,10 +23,12 @@
     <div class="playerSelection">
       <div class="question">What is your move?</div>
       <div class="playerOptions">
-        <button class="rock">Rock</button>
-        <button class="paper">Paper</button>
-        <button class="scissors">Scissors</button>
+        <button id="rock" onclick="changePlayerSelection('rock')">Rock</button>
+        <button id="paper" onclick="changePlayerSelection('paper')">Paper</button>
+        <button id="scissors" onclick="changePlayerSelection('scissors')">Scissors</button>
       </div>
+      <div class="playerChoice">You selected:</div>
+      <div class="choice">choice</div>
     </div>
     <div class="results">
       This is where we will see the results update.

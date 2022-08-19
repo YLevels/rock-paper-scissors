@@ -3,7 +3,6 @@ const player = document.querySelector('.playerInput');
 const para = document.querySelector('p');
 
 player.addEventListener('change', () => {
-    //const name = document.getElementsByClassName("playerInput").value;
     const name = document.querySelector(".playerInput").value;
     para.textContent = `${name}`;
 });
@@ -23,9 +22,17 @@ function getComputerChoice () {
   return computerChoice;
 }
 
+//declares playerSelection
+function changePlayerSelection (choice) {
+    const playerChoice = document.querySelector(".choice");
+    playerChoice.textContent = choice
+}
+
 //plays a single round of Rock Paper Scissors
 function playRound(playerSelection, computerSelection) {
-  let player = playerSelection.toLowerCase();
+
+  console.log(playerSelection);
+  
 }
 
 console.log(getComputerChoice());
