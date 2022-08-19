@@ -22,7 +22,7 @@ function getComputerChoice () {
   return computerChoice;
 }
 
-//declares playerSelection
+//declares playerSelection (eventually this should be inherited in single round to update results)
 function changePlayerSelection (choice) {
     const playerChoice = document.querySelector(".choice");
     playerChoice.textContent = choice
@@ -30,8 +30,10 @@ function changePlayerSelection (choice) {
 
 //plays a single round of Rock Paper Scissors
 function playRound(playerSelection, computerSelection) {
-
-  console.log(playerSelection);
+//player selects button and their move
+//computer selects move
+//compare player and computer moves
+//returns a string that declares the winner of the round
   
 }
 
