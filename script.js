@@ -1,5 +1,3 @@
-console.log("Hello World");
-
 //randomly returns either 'rock', 'paper', or 'scissors'
 function getComputerChoice () {
   let randomNumber = Math.floor(Math.random() * 3) + 1;
@@ -20,5 +18,4 @@ function playRound(playerSelection, computerSelection) {
   let player = playerSelection.toLowerCase();
 }
 
-console.log("Hello World");
 console.log(getComputerChoice());
