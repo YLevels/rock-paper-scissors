@@ -1,3 +1,13 @@
+//takes in player's name
+const player = document.querySelector('.playerInput');
+const para = document.querySelector('p');
+
+player.addEventListener('change', () => {
+    //const name = document.getElementsByClassName("playerInput").value;
+    const name = document.querySelector(".playerInput").value;
+    para.textContent = `${name}`;
+});
+
 //randomly returns either 'rock', 'paper', or 'scissors'
 function getComputerChoice () {
   let randomNumber = Math.floor(Math.random() * 3) + 1;
