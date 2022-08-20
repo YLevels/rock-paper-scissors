@@ -1,8 +1,8 @@
-//takes in player's name
-const player = document.querySelector('.playerInput');
+//takes in player's name and changes "Player" display on webpage
+const playerName = document.querySelector('.playerInput');
 const para = document.querySelector('p');
 
-player.addEventListener('change', () => {
+playerName.addEventListener('change', () => {
     const name = document.querySelector(".playerInput").value;
     para.textContent = `${name}`;
 });
@@ -22,19 +22,44 @@ function getComputerChoice () {
   return computerChoice;
 }
 
-//declares playerSelection (eventually this should be inherited in single round to update results)
-function changePlayerSelection (choice) {
-    const playerChoice = document.querySelector(".choice");
-    playerChoice.textContent = choice
-}
+//declares playerSelection with buttons (eventually this should be inherited in single round to update results)
+// function changePlayerSelection (choice) {
+//     const playerChoice = document.querySelector(".choice");
+//     playerChoice.textContent = choice;
+// }
+
+//identifies playerMove
+const playerType = document.querySelector('.playerType');
+const playerChoice = document.querySelector(".choice");
+
+playerType.addEventListener('change', () => {
+    const playerMove = document.querySelector(".playerType").value;
+    playerChoice.textContent = `${playerMove}`;
+});
 
 //plays a single round of Rock Paper Scissors
-function playRound(playerSelection, computerSelection) {
+// function playRound(playerSelection, computerSelection) {
+    //let pMove = 
+    //let playerMove = document.getElementById("rock");
+    // let playerMove = document.querySelector(".choice").value;
+    // let computerMove = getComputerChoice();
+    // let result = "";
 //player selects button and their move
+//playerMove = changePlayerSelection(playerChoice);
+
 //computer selects move
 //compare player and computer moves
-//returns a string that declares the winner of the round
+
+// switch (result) {
+
+// }
+// result = "Rock beats scissors. You win!";
+// result = "Paper beats rock. You win!";
+// result = "Scissors beat paper. You win";
+// //returns a string that declares the winner of the round
+// return result;
   
-}
+// }
 
 console.log(getComputerChoice());
+//console.log(playRound("yes", "no"));
