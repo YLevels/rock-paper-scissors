@@ -42,16 +42,14 @@ playerType.addEventListener('change', () => {
 });
 
 function getPlayerMove () {
-    document.getElementById("playerType").reset();
+    const playerMove = document.querySelector(".playerType").value;
+    document.getElementById("inputPlayerMove").reset();
+    return playerMove;
 }
 
 //plays a single round of Rock Paper Scissors
-// function playRound(playerSelection, computerSelection) {
-    //let pMove = 
-    //let playerMove = document.getElementById("rock");
-    // let playerMove = document.querySelector(".choice").value;
-    // let computerMove = getComputerChoice();
-    // let result = "";
+function playRound(playerSelection, computerSelection) {
+
 //player selects button and their move
 //playerMove = changePlayerSelection(playerChoice);
 
@@ -61,13 +59,11 @@ function getPlayerMove () {
 // switch (result) {
 
 // }
-// result = "Rock beats scissors. You win!";
-// result = "Paper beats rock. You win!";
-// result = "Scissors beat paper. You win";
-// //returns a string that declares the winner of the round
-// return result;
-  
-// }
+result = "Rock beats scissors. You win!";
+result = "Paper beats rock. You win!";
+result = "Scissors beat paper. You win";
+//returns a string that declares the winner of the round
+return result;
+}
 
-console.log(getComputerChoice());
-//console.log(playRound("yes", "no"));
+getPlayerMove();

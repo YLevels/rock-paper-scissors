@@ -31,17 +31,26 @@
     </div>
 
     <div class="playerSelection">
-      <div class="question">What is your move?</div>
-        <input class = "playerType" id = "playerType" type="text">
-        <!--BUTTONS DO NOT WORK YET
+      <form class="inputPlayerMove" id = "inputPlayerMove">
+        <div class ="question">Choose one:<br>Rock - Paper - Scissors</div>
+        <input class = "playerType" id = "playerType" type="text"><br>
+        <input type="button" onclick="getPlayerMove()" value="Submit">
+      </form>
+      <!--BUTTONS DO NOT WORK YET
         <div class="playerOptions">
           <button id="rock" value = "rock" onclick="changePlayerSelection('rock')">Rock</button>
           <button id="paper" value = "paper" onclick="changePlayerSelection('paper')">Paper</button>
           <button id="scissors" value = "scissors" onclick="changePlayerSelection('scissors')">Scissors</button>
         </div>-->
       <div class="playerChoice">You selected:</div>
-        <div class="choice">choice</div>
+      <div class="choice">choice</div>
     </div>
+
+
+
+        
+
+
 
     <div class="results">
       This is where we will see the results update.
