@@ -18,7 +18,7 @@ h2, h4 {
     gap: 20px;
 }
 
-.playerScore, .computerScore, .playerSelection {
+.inputPlayerName, .playerScore, .computerScore, .playerSelection {
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -1,11 +1,15 @@
 //takes in player's name and changes "Player" display on webpage
 const playerName = document.querySelector('.playerInput');
-const para = document.querySelector('p');
+const para = document.querySelector('.player');
 
 playerName.addEventListener('change', () => {
-    const name = document.querySelector(".playerInput").value;
+    const name = "\n" + document.querySelector(".playerInput").value + "\n";
     para.textContent = `${name}`;
 });
+
+function getPlayerName() {
+    document.getElementById("inputPlayerName").reset();
+}
 
 //randomly returns either 'rock', 'paper', or 'scissors'
 function getComputerChoice () {
@@ -33,7 +37,7 @@ const playerType = document.querySelector('.playerType');
 const playerChoice = document.querySelector(".choice");
 
 playerType.addEventListener('change', () => {
-    const playerMove = document.querySelector(".playerType").value;
+    const playerMove = document.querySelector(".playerType").value.toLowerCase();
     playerChoice.textContent = `${playerMove}`;
 });
 
