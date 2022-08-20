@@ -6,13 +6,19 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <h2>Rock Paper Scissors</h2>
-    <div class="playerName">Enter your name: </div>
-    <input class="playerInput" type="text">
+
+    <form class="inputPlayerName" id = "inputPlayerName">
+      What is your name? <input class="playerInput" id = playerInput type="text" name="pname"><br>
+      <input type="button" onclick="getPlayerName()" value="Start game!"><br><br>
+    </form>
+
     <div class="directions"><h4>First to 5 wins!</h4></div>
+    
     <div class="scoreSection">
     <div class="playerScore">
-      <div class="player"><p>Player</p></div>
+      <div ><p class="player" id="player">Player</p></div>
       <div class="playerScore">0</div>
     </div>
     <div class="computerScore">
@@ -29,7 +35,7 @@
         <button id="scissors" value = "scissors" onclick="changePlayerSelection('scissors')">Scissors</button>
       </div>
       -->
-      <input class = "playerType" type="text">
+      <input class = "playerType" id = "playerType" type="text">
       <div class="playerChoice">You selected:</div>
       <div class="choice">choice</div>
     </div>
