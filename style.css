@@ -13,12 +13,13 @@ h2, h4 {
     color: darkmagenta;
 }
 
-.scoreSection, .playerOptions {
+.nameForm, .scoreSection, .playerOptions {
     display: flex;
     gap: 20px;
+    justify-content: center;
 }
 
-.inputPlayerName, .playerScore, .computerScore, .playerSelection {
+.playerScore, .computerScore, .playerSelection {
     display: flex;
     flex-direction: column;
     align-items: center;

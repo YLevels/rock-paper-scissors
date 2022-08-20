@@ -41,6 +41,10 @@ playerType.addEventListener('change', () => {
     playerChoice.textContent = `${playerMove}`;
 });
 
+function getPlayerMove () {
+    document.getElementById("playerType").reset();
+}
+
 //plays a single round of Rock Paper Scissors
 // function playRound(playerSelection, computerSelection) {
     //let pMove = 
